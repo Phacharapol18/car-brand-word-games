@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: bisque;
+    text-align: center;
+}
+main {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.top{
+    background-color: antiquewhite;
+    width: 50%; 
+    height: 500px;
+
+}
+.bottom {
+    background-color: aquamarine;
+    width: 30%;
+    font-size: 1.5rem;
+}
+.word {
+    font-size: 6.5rem;
+    text-align: center;
+    margin-top: 20%;
+}
