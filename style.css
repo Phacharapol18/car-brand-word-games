@@ -96,8 +96,15 @@ main {
     .top,.bottom{
         width: 95%;
     }
+    .bottom {
+        margin: 199px auto ;
+    }
     #word-random{
     font-size: 3.75rem;
     margin: 20%;
+    }
+    main {
+        padding-top: 100px;
+        padding-bottom: 165.5px;
     }
 }
