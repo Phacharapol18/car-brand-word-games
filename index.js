@@ -14,13 +14,14 @@ let lossesSpan = document.querySelector('#lose')
 let wordContent = document.querySelector('.word');
 let timeCount = document.querySelector('#countdown');
 let wordGuess = ['MAZDA', 'HONDA', 'TOYOTA', 'AUDI', 'NISSAN','LAMBORGHINI',
-'FERRARI','DODGE','FORD','CHEVY','VOLKSWAGEN'];
+'FERRARI','DODGE','FORD','CHEVY','VOLKSWAGEN', 'ACURA', 'ALFA ROMEO', 'BENTLEY',
+'BUICK','CADILLAC', 'HYUNDAI', 'MINI', 'MERCEDES-BENZ', 'SUBARU'];
 console.log(wordGuess.length);
 let randomNum;
 let isPlaying = false;
 let guessArr = [];
 let timer;
-let timeLeft = 15;
+let timeLeft = 40;
 let wins = localStorage.getItem('wins') || 0;
 let losses = localStorage.getItem('losses') || 0;
 winsSpan.textContent = wins;
@@ -35,7 +36,7 @@ function startGame(){
         return;
     }
     isPlaying = true;
-    timeLeft = 15;
+    timeLeft = 40;
     guessArr = [];
 randomNum =  wordGuess[Math.floor(Math.random() * wordGuess.length)]
 randomNum = randomNum.split('');
