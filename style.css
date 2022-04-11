@@ -4,17 +4,20 @@
     box-sizing: border-box;
     font-family: 'Cabin Sketch', cursive, sans-serif;
 }
+
 header {
     background-color: #632626;
     text-align: center;
     padding: 25px 0;
-    border-bottom:5px dashed #F0A500;
+    border-bottom: 5px dashed #F0A500;
 }
-h1{
+
+h1 {
     font-size: 3.5rem;
     color: #f0f8ff;
-    
+
 }
+
 main {
     display: flex;
     width: 100%;
@@ -23,15 +26,17 @@ main {
     background: #1E212D;
 }
 
-.top{
-    background-color: #632626;;
-    width: 70%; 
+.top {
+    background-color: #632626;
+    ;
+    width: 70%;
     height: 500px;
     color: #f0f8ff;
     border: 5px dashed #F0A500;
     border-radius: 25px;
 
 }
+
 .bottom {
     background-color: #35589A;
     width: 15%;
@@ -43,27 +48,56 @@ main {
     border: 5px dashed #F0A500;
     border-radius: 25px;
 }
+
 .word {
     font-size: 6rem;
     text-align: center;
     margin-top: 15%;
 }
 
-#Start{
+#Start {
     width: 20%;
     font-size: 2rem;
     border-radius: 60px;
     background: #F0A500;
     color: #f0f8ff;
 }
-#Start:hover, #reset:hover{
-    background: #FF5F00 ;
+
+#Start:hover,
+#reset:hover {
+    background: #FF5F00;
     cursor: pointer;
 }
-#reset{
-   font-size: 1.25rem;
-   width: 60%;
-   background: #F0A500;
+
+#reset {
+    font-size: 1.25rem;
+    width: 60%;
+    background: #F0A500;
     color: #f0f8ff;
     border-radius: 50px;
+}
+
+@media (max-width:1240px) {
+
+    .top,
+    .bottom {
+        width: 70%;
+        margin: 0 auto;
+        
+    }
+    #word-random{
+        font-size: 4.75rem;
+    }
+    main {
+        display: block;
+    }
+}
+@media (max-width:640px){
+    .top,.bottom{
+        width: 95%;
+    }
+    #word-random{
+    font-size: 3.75rem;
+    margin: 20%;
+    }
 }
